@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<p>Click button to crash chrome in iOS.</p>
+<p>Open new tab about:blank</p>
 
-<button onclick="myFunction()">Crash me!</button>
+<button onclick="myFunction()">click me!</button>
 
 <script>
 function myFunction() {
-    var win = window.open('about:close','windowname12','width=1,height=1,left=5,top=3');
+    var win = window.open('about:blank','windowname','width=1,height=1,left=5,top=3');
     setTimeout(function() { win.close();}, 3000);
 }
 </script>
